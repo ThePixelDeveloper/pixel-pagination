@@ -17,13 +17,14 @@
  *  - source:  query or route
  *  - key:     query key or route parameter name
  * 
- * Pagination can now be used to offset your resultset 
- * (we already have the limit). Get the offset with the `get_offset()` function.
+ * Pagination can now be used to offset your resultset. Get the offset with 
+ * the `get_offset()` function.
  * 
  * 2 other methods are available: get_total_pages() and get_page(), but these are
  * mainly used in the view class and have no need to be accessed in the controller.
  * 
- * The pagination class is now ready to be passed into the Pagination view.
+ * The pagination class is now ready to be passed into the Pagination view. There
+ * are also different view styles (View_Pagination_Punbb, View_Pagination_Extended)
  * 
  *     $view = new View_Pagination;
  *     $view->pagination = $pagination;
