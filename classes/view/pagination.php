@@ -127,7 +127,7 @@ class View_Pagination extends Kostache
 			$page = NULL;
 		}
 		
-		return $this->request->url().URL::query(array('page' => $page));
+		return $this->request->url().URL::query(array('page' => $page), FALSE);
 	}
 	
 	/**
