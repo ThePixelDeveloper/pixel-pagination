@@ -44,8 +44,9 @@ abstract class Pixel_Pagination
 	protected $_total, $_limit, $_current;
 	
 	/**
-	 *
-	 * @param type $total
+	 * @param integer $total
+	 * @param integer $limit
+	 * @param integer $current 
 	 */
 	public function __construct($total, $limit, $current)
 	{
@@ -55,9 +56,10 @@ abstract class Pixel_Pagination
 	}
 	
 	/**
-	 *
 	 * @param integer $total
 	 * @param integer $limit
+	 * @param integer $current
+	 * @return Pagination 
 	 */
 	public static function factory($total, $limit, $current)
 	{
