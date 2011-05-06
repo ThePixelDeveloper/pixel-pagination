@@ -37,9 +37,7 @@
  * @license    MIT
  */
 abstract class Pixel_Pagination
-{
-	protected $_titles = array();
-	
+{	
 	/**
 	 * @var integer 
 	 */
