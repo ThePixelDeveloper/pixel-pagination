@@ -1,0 +1,9 @@
+<p class="pagination">
+	{{pages_label}}: 
+
+	{{#links}}
+		{{#current}}<span class="inactive">{{label}}</span>{{/current}}
+		{{^current}}<a href="{{url}}">{{label}}</a>{{/current}}
+	{{/links}}
+</p>
+
