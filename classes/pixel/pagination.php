@@ -73,6 +73,22 @@ abstract class Pixel_Pagination
 	{
 		return (($this->get_page() - 1) * $this->_limit);
 	}
+	
+	/**
+	 * @return integer Per page limit
+	 */
+	public function get_limit()
+	{
+		return $this->_limit;
+	}
+	
+	/**
+	 * @return integer The total number of rows
+	 */
+	public function get_total()
+	{
+		return $this->_total;
+	}
 		
 	/**
 	 * @return integer Current page number
