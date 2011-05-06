@@ -1,0 +1,34 @@
+<p class="pagination">
+	{{#first_page}}
+		<a href="{{url}}">{{first_page_label}}</a>
+	{{/first_page}}
+	{{^first_page}}
+		<span class="inactive">{{first_page_label}}</span>
+	{{/first_page}}
+
+	{{#previous_page}}
+		<a href="{{url}}">{{previous_page_label}}</a>
+	{{/previous_page}}
+	{{^previous_page}}
+		<span class="inactive">{{previous_page_label}}</span>
+	{{/previous_page}}
+
+	{{#links}}
+		{{#current}}<span class="inactive">{{label}}</span>{{/current}}
+		{{^current}}<a href="{{url}}">{{label}}</a>{{/current}}
+	{{/links}}
+
+	{{#next_page}}
+		<a href="{{url}}">{{next_page_label}}</a>
+	{{/next_page}}
+	{{^next_page}}
+		<span class="inactive">{{next_page_label}}</span>
+	{{/next_page}}
+
+	{{#last_page}}
+		<a href="{{url}}">{{last_page_label}}</a>
+	{{/last_page}}
+	{{^last_page}}
+		<span class="inactive">{{last_page_label}}</span>
+	{{/last_page}}
+</p>
