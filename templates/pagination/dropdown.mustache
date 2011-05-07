@@ -1,0 +1,37 @@
+<p class="pagination">
+
+	{{#previous_page}}
+		<a href="{{url}}">{{previous_page_label}}</a>
+	{{/previous_page}}
+	{{^previous_page}}
+		<span class="inactive">{{previous_page_label}}</span>
+	{{/previous_page}}
+	
+	<select class="selector">
+	{{#links}}
+		{{#current}}
+			<option selected value="{{url}}">{{label}}</option>
+		{{/current}}
+		{{^current}}
+			<option value="{{url}}">{{label}}</option>
+		{{/current}}
+	{{/links}}
+	</select>
+
+	{{#next_page}}
+		<a href="{{url}}">{{next_page_label}}</a>
+	{{/next_page}}
+	{{^next_page}}
+		<span class="inactive">{{next_page_label}}</span>
+	{{/next_page}}
+	
+</p>
+<script>
+$('.pagination .selector').each(function()
+{
+	$(this).change(function()
+	{
+		window.location = $(this).val();
+	});
+});
+</script>

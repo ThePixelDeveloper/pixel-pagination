@@ -138,9 +138,9 @@ class View_Pagination extends Kostache
 	 */
 	public function label($page)
 	{
-		if (array_key_exists($page, $this->labels))
+		if (array_key_exists($page - 1, $this->labels))
 		{
-			return (string) $this->labels[$page];
+			return (string) $this->labels[$page - 1];
 		}
 		
 		return $page;
