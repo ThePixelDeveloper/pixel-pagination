@@ -1,5 +1,5 @@
 {
-    "name": "ThePixelDeveloper/pixel-pagination",
+    "name": "thepixeldeveloper/pixel-pagination",
     "type": "kohana-module",
     "description": "Pagination library for Kohana v3.3",
     "keywords": ["kohana", "pagination"],
