@@ -6,7 +6,7 @@
  * @copyright  (c) 2011 Mathew Davies
  * @license    MIT
  */
-class View_Pagination extends Kostache
+class View_Pagination
 {
 	/**
 	 * @var Pagination
@@ -24,17 +24,9 @@ class View_Pagination extends Kostache
 	public $request;
 	
 	public $_template = 'pagination/basic';
-	
-	/**
-	 *
-	 * @param type $template
-	 * @param type $view
-	 * @param type $partials 
-	 */
-	public function __construct($template = null, $view = null, $partials = null)
+
+	public function __construct()
 	{
-		parent::__construct($template, $view, $partials);
-		
 		// Setup labels, not sure of a good way to do this
 		$this->first_page_label    = __('First page');
 		$this->last_page_label     = __('Last page');
@@ -63,6 +55,11 @@ class View_Pagination extends Kostache
 			return array(array('url' => $this->url($this->pagination->get_total_pages())));
 		}
 	}
+
+    public function get_template()
+    {
+        return $this->_template;
+    }
 	
 	/**
 	 * @return array URL for the previous page.
