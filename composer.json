@@ -1,0 +1,17 @@
+{
+    "name": "ThePixelDeveloper/pixel-pagination",
+    "type": "kohana-module",
+    "description": "Pagination library for Kohana v3.3",
+    "keywords": ["kohana", "pagination"],
+    "homepage": "https://github.com/ThePixelDeveloper/pixel-pagination",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mathew Davies",
+            "email": "thepixeldeveloper@googlemail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*"
+    }
+}
